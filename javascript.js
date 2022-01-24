@@ -1,25 +1,30 @@
-Вам дадут слово. Ваша задача — вернуть средний символ слова. Если длина слова нечетная, вернуть средний символ. Если длина слова четная, верните средние 2 символа.
 
-someNumber = 'asff'
 
-var isEven = function(someNumber) {
-    return (str.someNumber % 2 == 0) ? true : false;
-  };
 
-console.log(isEven(''asff''asff''));
-#Примеры:
 
-Kata.getMiddle("test") должен возвращать "es"
+function oddOrEven(array) {
+    let sum = 0;
+    for(let i =0 ; i<array.length; i++ ) {
+        sum+= array[i];
+    }
+    console.log(sum);
 
-Kata.getMiddle("testing") должен возвращать "t"
+    /* if (sum.length % 2 == 0 ) {
+        return sum % 2 === 0 ? "Even" : "Odd"
+    }  */
+ }
 
-Kata.getMiddle("middle") должен возвращать "dd"
+ console.log(oddOrEven([2,4,6]));
 
-Kata.getMiddle("A") должен вернуть "A"
-#Вход
+ function even_or_odd(number) {
+    return number % 2 === 0 ? "Even" : "Odd"
+}
 
-Слово (строка) длиной 0 < str < 1000 (в javascript вы можете получить чуть больше 1000 в некоторых тестовых примерах из-за ошибки в тестовых примерах). Вам не нужно тестировать для этого. Это только здесь, чтобы сказать вам, что вам не нужно беспокоиться о тайм-ауте вашего решения.
+console.log(even_or_odd(3));
 
-#Вывод
 
-Средний символ (символы) слова, представленного в виде строки.
+function oddOrEven(array) {
+    return array.map(i=>x+=i, x=0).reverse()[0] % 2 === 0 ? "Even" : "Odd"
+ }
+
+ console.log(oddOrEven([-2,-2]));
