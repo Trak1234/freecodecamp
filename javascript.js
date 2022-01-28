@@ -228,3 +228,50 @@ function even_or_odd(number) {
       return "Odd";
     }
   }
+
+  function bmi(weight, height) {
+    let cfg  = weight/Math.pow(height,2);
+  if (cfg <= 18.5 ) {
+    return "Underweight";
+  } else if ( cfg <= 25.0 ) {
+    return "Normal";
+  } else if ( cfg <= 30.0 ) {
+    return "Overweight";
+  } else if (cfg > 30 ) {
+    return "Obese";
+  }
+}
+
+
+function bmi(weight, height) {
+    let b = weight / height**2;
+    return b <= 18.5 ? 'Underweight' : b <= 25.0 ? 'Normal' : b <= 30.0 ? 'Overweight' : 'Obese';
+  }
+  
+
+
+console.log(bmi(102,190));
+
+
+function check(a, x) {
+    if( a.includes(x) === true ) {
+      return true;
+    } else {
+      return false;
+    }
+}
+
+console.log(check([1231,312,'312','dfasf'], '312'));
+
+
+
+function areYouPlayingBanjo(name) {
+    if ( name[0] === 'R' || name[0] === 'r' ) {
+      return name +  " plays banjo" 
+    } else {
+      return name +  " does not play banjo"
+    }
+    
+  }
+
+console.log(areYouPlayingBanjo('Adam'));
