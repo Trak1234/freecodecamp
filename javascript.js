@@ -160,3 +160,17 @@ function solution(str){
 
 console.log(findNeedle(['hay', 'junk', 'hay', 'hay', 'moreJunk', 'needle', 'randomJunk'])
 );
+
+function repeatStr (n, s) {
+    return s.repeat(n);
+  }
+
+
+  const myStr = "I am a \"double quoted\" string inside \"double quotes\"."; // Change this lineconst myStr = "I am a \"double quoted\" string inside \"double quotes\"."; // Change this line
+
+  // Setup
+let lastNameLength = 0;
+const lastName = "Lovelace";
+
+// Only change code below this line
+lastNameLength = lastName.length;
