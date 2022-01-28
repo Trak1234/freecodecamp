@@ -27,7 +27,9 @@ function oddOrEven(array) {
     return array.map(i=>x+=i, x=0).reverse()[0] % 2 === 0 ? "Even" : "Odd"
  }
 
- console.log(oddOrEven([-2,-2]));
+ console.log(oddOrEven([-3,-3]));
+
+
 
 
  function XO(str) {
@@ -41,9 +43,14 @@ function oddOrEven(array) {
     }
 }
 
+console.log(XO('XOXOXOXOx'));
+
+
+
 function noSpace(x){
     return x.split(' ').join('');
   }
+
 
 
 
@@ -127,15 +134,17 @@ function removeChar(str){
 {
   switch(operation){
       case '+':
-      return value1 + value2;
+      return (+value1 + +value2);
       case '-':
-      return value1 - value2;
+      return (value1 - value2);
       case '*':
-      return value1 * value2;
+      return (value1 * value2);
       case '/':
-      return value1 / value2;
+      return (value1 / value2);
   }
 }
+
+console.log(basicOp('+','10','20'));
 
 
 function simpleMultiplication(number) {
@@ -165,6 +174,8 @@ function repeatStr (n, s) {
     return s.repeat(n);
   }
 
+console.log(repeatStr(10));
+
 
   const myStr = "I am a \"double quoted\" string inside \"double quotes\"."; // Change this lineconst myStr = "I am a \"double quoted\" string inside \"double quotes\"."; // Change this line
 
@@ -174,3 +185,46 @@ const lastName = "Lovelace";
 
 // Only change code below this line
 lastNameLength = lastName.length;
+
+
+
+// Setup
+const lastName = "Lovelace";
+
+// Only change code below this line
+const lastLetterOfLastName = lastName[lastName.length - 1]; // Change this line
+
+
+
+let stringToNumber = function(str){
+    return parseInt(str);
+  }
+
+
+function abbrevName(name){
+    var nam = name.split(' ');
+    return (nam[0][0]+'.' + nam[1][0]).toUpperCase();
+}
+
+console.log(abbrevName('Asd Asd'));
+
+
+function validatePIN (pin) {
+    const pinMatch = /^[0-9]/g
+    if (pin.length === 4 && pin.length === 6 && pin == pinMatch  ) {
+      return true;
+    } else { 
+    return false;
+    }
+  }
+
+console.log(pin(1234));
+
+
+function even_or_odd(number) {
+    if ( number % 2 === 0 ) { 
+      return "Even";
+    } else if ( number % 2 != 0){
+      return "Odd";
+    }
+  }
