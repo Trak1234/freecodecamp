@@ -338,3 +338,33 @@ function feast(beast, dish) {
  function doubleInteger(i) {
   return i*2;
 }
+
+
+function digitize(n) {
+  if (n <= 0 ) {
+    return 0
+  } else if(n > 0 ) {
+    let asd =  n.split(' ').reverse();
+  }
+ }
+
+
+ let n = 12335;
+
+ let asd =  String(n).split('').reverse();
+console.log(asd);
+
+function openOrSenior(data){
+  if ( data[0] > 55 && data[1] > 7 ) {
+      return 'Senior';   
+  } else if (data[0] < 55 && data[1] < 7 ) {
+     return 'Open';
+  }
+}
+
+
+
+function litres(time) {
+  var voda = Math.floor(time * 0.5);
+  return voda;
+}
