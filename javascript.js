@@ -368,3 +368,18 @@ function litres(time) {
   var voda = Math.floor(time * 0.5);
   return voda;
 }
+
+
+function booleanToString(b){
+  if ( b === true) { 
+  return 'true';
+  } else if ( b === false) { 
+  return 'false';
+  }
+}
+
+
+function addBinary(a,b) {
+  let c = +a + +b;
+  return(c).toString(2);
+}
