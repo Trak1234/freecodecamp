@@ -311,3 +311,30 @@ function makeUpperCase(str) {
 }
 
 
+function isDivideBy(number, a, b) {
+  if ( number % a === 0 && number % b === 0  ) {
+    return true;
+  } else {
+    return false;
+  }
+}
+
+let awe = 'Assfas';
+console.log(awe.slice(0,1));
+console.log(awe.slice(-1));
+
+function feast(beast, dish) {
+  if (beast.slice(0,1) == dish.slice(0,1) && 
+      beast.slice(-1) == dish.slice(-1) ) {
+    return true;
+  } else {
+    return false;
+  } 
+ }
+
+ console.log(feast('asd','asd'));
+
+
+ function doubleInteger(i) {
+  return i*2;
+}
