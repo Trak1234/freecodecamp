@@ -275,3 +275,39 @@ function areYouPlayingBanjo(name) {
   }
 
 console.log(areYouPlayingBanjo('Adam'));
+
+
+function countBy(x, n) {
+    let z = [];
+        for(i=1; i<=x; i++) {
+            z.push(n*i);
+        }
+    return z;
+  }
+
+console.log(countBy(10,5));
+
+
+
+function sum (x){
+  let arr = x.join(' ')
+  let arr = str.split(' ');
+  for (let i =0; i<arr.length; i++) {
+    sun += Number(arr[i]);
+  }
+  return sun;
+}
+console.log(sum([1,'2','3']));
+
+
+
+function opposite(number) {
+  return -number;
+}
+
+
+function makeUpperCase(str) {
+  return str.toUpperCase();
+}
+
+
